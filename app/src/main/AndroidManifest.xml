@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.spl">
+
+    <application
+        android:name=".Flag"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FitnessInstructor"></activity>
+        <activity android:name=".InformParents" />
+        <activity android:name=".AcademicInstructorMain" />
+        <activity android:name=".StudentList" />
+        <activity android:name=".CreateNutPlan" />
+        <activity android:name=".CreateTraining" />
+        <activity android:name=".ViewNutPlan" />
+        <activity android:name=".SportInstructorMain" />
+        <activity android:name=".SportUserMain" />
+        <activity android:name=".CreateDanceCourse" />
+        <activity android:name=".DanceInstructorMain" />
+        <activity android:name=".AcademicUserMain" />
+        <activity
+            android:name=".DanceUserMain"
+            android:label="@string/title_activity_dance_user_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DanceUserActivity"
+            android:label="@string/title_activity_dance_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SleepTracker" />
+        <activity android:name=".TaskReminder" />
+        <activity android:name=".FindMentor" />
+        <activity android:name=".DanceStudentProfile" />
+        <activity android:name=".SelectCostume" />
+        <activity android:name=".GetCertificate" />
+        <activity android:name=".MusicPlaylist" />
+        <activity android:name=".Assignment" />
+        <activity android:name=".StudentCourseDetails" />
+        <activity android:name=".StudentMyCourses" />
+        <activity android:name=".CourseDetails" />
+        <activity android:name=".SearchCourses" />
+        <activity android:name=".TeacherMyCourses" />
+        <activity android:name=".AssignTask" />
+        <activity android:name=".ForumList" />
+        <activity android:name=".ForumPage" />
+        <activity android:name=".TakenCaloriePage" />
+        <activity android:name=".WeightLossProgress" />
+        <activity android:name=".ViewWeightLift" />
+        <activity android:name=".CreatePrivateCoursePage" />
+        <activity android:name=".OnlineCourseCreatePage" />
+        <activity android:name=".CreatePersonalCourse" />
+        <activity android:name=".DanceTeamList" />
+        <activity android:name=".BuildDanceTeam" />
+        <activity android:name=".AcademicStudentProfile" />
+        <activity android:name=".TeacherProfile" />
+        <activity android:name=".TeacherList" />
+        <activity
+            android:name=".ViewSchedule"
+            android:label="@string/title_activity_view_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupPage"
+            android:label="@string/title_activity_signup_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SigninPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

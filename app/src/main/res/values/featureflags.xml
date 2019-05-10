@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name = "SelectCourse">true</bool>
+    <bool name = "CreateClass">true</bool>
+    <bool name = "CreateSchedule">true</bool>
+    <bool name = "CreateProfile">true</bool>
+    <bool name = "MakeAppointment">true</bool>
+    <bool name = "ViewSchedule">true</bool>
+    <bool name = "AppointmentWithTeacher">true</bool>
+    <bool name = "GeneralInfo">true</bool>
+    <bool name = "onlineServices">true</bool>
+    <bool name = "CommentAndRate">true</bool>
+    <bool name = "Profiles">true</bool>
+    <bool name = "GiveOnlineCourse">true</bool>
+    <bool name = "GivePersonalCourse">true</bool>
+
+
+    <bool name = "TaskReminder">true</bool>
+    <bool name = "AssignTask">true</bool>
+    <bool name = "InformParents">true</bool>
+    <bool name = "ProblemDiscussion">true</bool>
+    <bool name = "FindMentor">true</bool>
+
+    <bool name = "EducationalInfo">true</bool>
+    <bool name = "AcademicalStudy">true</bool>
+    <bool name = "GiveQuiz">true</bool>
+    <bool name = "SleepTracker">true</bool>
+    <bool name = "AIForFreeTime">true</bool>
+
+
+    <bool name = "PrevDanceExp">true</bool>
+    <bool name = "FindDancePartner">true</bool>
+    <bool name = "FindTeam">true</bool>
+</resources>
