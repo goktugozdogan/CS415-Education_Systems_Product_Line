@@ -1,10 +1,10 @@
 package com.example.spl._factory;
 
-import com.example.spl._core.Teacher;
+import com.example.spl._core.Student;
 import com.example.spl._core.UserSchedule;
-import com.example.spl.academic.AcademicTeacher;
-import com.example.spl.dance.DanceTeacher;
-import com.example.spl.fitness.FitnessTeacher;
+import com.example.spl.academic.AcademicStudent;
+import com.example.spl.dance.DanceStudent;
+import com.example.spl.fitness.FitnessStudent;
 
 public class StudentFactory {
     public StudentFactory(){
@@ -18,17 +18,17 @@ public class StudentFactory {
             return null;
         }
         else if(userType == "academicStudent"){
-            return new AcademicTeacher(name,  surname, password,
+            return new AcademicStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
         else if(userType == "danceStudent"){
-            return new DanceTeacher(name,  surname, password,
+            return new DanceStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
         else if(userType == "fitnessStudent"){
-            return new FitnessTeacher(name,  surname, password,
+            return new FitnessStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
