@@ -20,7 +20,7 @@ public class StudentFactory {
         else if(userType == "academicStudent"){
             return new AcademicStudent(name,  surname, password,
                     address, phone, email, schedule,
-                    paymentInfo);
+                    paymentInfo,"", "");
         }
         else if(userType == "danceStudent"){
             return new DanceStudent(name,  surname, password,
