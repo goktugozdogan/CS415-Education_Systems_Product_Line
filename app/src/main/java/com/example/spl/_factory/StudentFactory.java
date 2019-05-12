@@ -11,23 +11,23 @@ public class StudentFactory {
 
     }
 
-    public Teacher getStudent(String userType, String name, String surname, String password,
+    public Student getStudent(String userType, String name, String surname, String password,
                               String address, String phone, String email, UserSchedule schedule,
                               String paymentInfo){
         if(userType == null){
             return null;
         }
-        else if(userType == "academicTeacher"){
+        else if(userType == "academicStudent"){
             return new AcademicTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
-        else if(userType == "danceTeacher"){
+        else if(userType == "danceStudent"){
             return new DanceTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
-        else if(userType == "fitnessTeacher"){
+        else if(userType == "fitnessStudent"){
             return new FitnessTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
