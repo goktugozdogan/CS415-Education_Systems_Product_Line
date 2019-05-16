@@ -2,78 +2,83 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.spl">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:name=".Flag"
+        android:name=".UI.Flag"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".FitnessInstructor"></activity>
-        <activity android:name=".InformParents" />
-        <activity android:name=".AcademicInstructorMain" />
-        <activity android:name=".StudentList" />
-        <activity android:name=".CreateNutPlan" />
-        <activity android:name=".CreateTraining" />
-        <activity android:name=".ViewNutPlan" />
-        <activity android:name=".SportInstructorMain" />
-        <activity android:name=".SportUserMain" />
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UI.RegisterClass"></activity>
+        <activity android:name=".UI.RegisterPage" />
+        <activity android:name=".UI.FitnessInstructor" />
+        <activity android:name=".UI.InformParents" />
+        <activity android:name=".UI.AcademicInstructorMain" />
+        <activity android:name=".UI.StudentList" />
+        <activity android:name=".UI.CreateNutPlan" />
+        <activity android:name=".UI.CreateTraining" />
+        <activity android:name=".UI.ViewNutPlan" />
+        <activity android:name=".UI.SportInstructorMain" />
+        <activity android:name=".UI.SportUserMain" />
         <activity android:name=".CreateDanceCourse" />
-        <activity android:name=".DanceInstructorMain" />
-        <activity android:name=".AcademicUserMain" />
+        <activity android:name=".UI.DanceInstructorMain" />
+        <activity android:name=".UI.AcademicUserMain" />
         <activity
-            android:name=".DanceUserMain"
+            android:name=".UI.DanceUserMain"
             android:label="@string/title_activity_dance_user_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DanceUserActivity"
             android:label="@string/title_activity_dance_user"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChooseApp">
+        <activity android:name=".UI.ChooseApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SleepTracker" />
-        <activity android:name=".TaskReminder" />
-        <activity android:name=".FindMentor" />
-        <activity android:name=".DanceStudentProfile" />
-        <activity android:name=".SelectCostume" />
-        <activity android:name=".GetCertificate" />
-        <activity android:name=".MusicPlaylist" />
-        <activity android:name=".Assignment" />
-        <activity android:name=".StudentCourseDetails" />
-        <activity android:name=".StudentMyCourses" />
-        <activity android:name=".CourseDetails" />
-        <activity android:name=".SearchCourses" />
-        <activity android:name=".TeacherMyCourses" />
-        <activity android:name=".AssignTask" />
-        <activity android:name=".ForumList" />
-        <activity android:name=".ForumPage" />
-        <activity android:name=".TakenCaloriePage" />
-        <activity android:name=".WeightLossProgress" />
-        <activity android:name=".ViewWeightLift" />
-        <activity android:name=".CreatePrivateCoursePage" />
-        <activity android:name=".OnlineCourseCreatePage" />
-        <activity android:name=".CreatePersonalCourse" />
-        <activity android:name=".DanceTeamList" />
-        <activity android:name=".BuildDanceTeam" />
-        <activity android:name=".AcademicStudentProfile" />
-        <activity android:name=".TeacherProfile" />
-        <activity android:name=".TeacherList" />
+        <activity android:name=".UI.SleepTracker" />
+        <activity android:name=".UI.TaskReminder" />
+        <activity android:name=".UI.FindMentor" />
+        <activity android:name=".UI.DanceStudentProfile" />
+        <activity android:name=".UI.SelectCostume" />
+        <activity android:name=".UI.GetCertificate" />
+        <activity android:name=".UI.MusicPlaylist" />
+        <activity android:name=".UI.Assignment" />
+        <activity android:name=".UI.StudentCourseDetails" />
+        <activity android:name=".UI.StudentMyCourses" />
+        <activity android:name=".UI.CourseDetails" />
+        <activity android:name=".UI.SearchCourses" />
+        <activity android:name=".UI.TeacherMyCourses" />
+        <activity android:name=".UI.AssignTask" />
+        <activity android:name=".UI.ForumList" />
+        <activity android:name=".UI.ForumPage" />
+        <activity android:name=".UI.TakenCaloriePage" />
+        <activity android:name=".UI.WeightLossProgress" />
+        <activity android:name=".UI.ViewWeightLift" />
+        <activity android:name=".UI.CreatePrivateCoursePage" />
+        <activity android:name=".UI.OnlineCourseCreatePage" />
+        <activity android:name=".UI.CreatePersonalCourse" />
+        <activity android:name=".UI.DanceTeamList" />
+        <activity android:name=".UI.BuildDanceTeam" />
+        <activity android:name=".UI.AcademicStudentProfile" />
+        <activity android:name=".UI.TeacherProfile" />
+        <activity android:name=".UI.TeacherList" />
         <activity
-            android:name=".ViewSchedule"
+            android:name=".UI.ViewSchedule"
             android:label="@string/title_activity_view_schedule"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SignupPage"
+            android:name=".UI.SignupPage"
             android:label="@string/title_activity_signup_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SigninPage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".UI.SigninPage" />
+        <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

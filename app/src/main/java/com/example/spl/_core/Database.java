@@ -23,13 +23,20 @@ public class Database {
     public User Login(String email, String password, String appType){
         //Send request to database and get User if it exist
         ArrayList<TimeSlot> timeslots = new ArrayList<>();
-        timeslots.add(new TimeSlot("firstTimeSlot", new Date("12:30:00 10 10 2019"), new Date("14:30:00 10 10 2019")));
+        timeslots = null;
+        //timeslots.add(new TimeSlot("firstTimeSlot", new Date("12:30:00 10 10 2019"), new Date("14:30:00 10 10 2019")));
         ScheduleFactory scheduleFactory = new ScheduleFactory();
         String scheduleType = "userSchedule";
+
         UserSchedule schedule = (UserSchedule) scheduleFactory.getSchedule(scheduleType,1, "bestSchedule", timeslots);
         UserFactory userFactory = new UserFactory();
-        String userType = "academicStudent"; // can be changed to danceStudent, fitnessStudent, academicStudent, danceTeacher, fitnessTeacher or academicTeacher
-        User user = userFactory.getUser(userType,"Goktug", "Ozdogan", "123456", "Bilkent", "15502548484", "goktug@gmail.com",schedule,"Done");
+        User user;
+        if ( isTeacher ) {
+            appType += "T";
+            user = userFactory.getUser(appType,"Goktug", "Ozdogan", "123456", "Bilkent", "15502548484", "goktug@gmail.com",schedule,"Done");
+        }
+        else
+            user = userFactory.getUser(appType,"Goktug", "Ozdogan", "123456", "Bilkent", "15502548484", "goktug@gmail.com",schedule,"Done");
 
         HttpURLConnection connection = null;
         try {
@@ -44,7 +51,7 @@ public class Database {
             connection.setRequestProperty("password", password);
             connection.setRequestProperty("appType", appType);
 
-            InputStream response = connection.getInputStream();
+            //InputStream response = connection.getInputStream();
 
 
         } catch (Exception e) {
@@ -100,4 +107,6 @@ public class Database {
             return false;
         }
     }
+
+    private boolean isTeacher = false;
 }

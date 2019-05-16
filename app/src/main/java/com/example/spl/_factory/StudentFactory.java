@@ -17,17 +17,17 @@ public class StudentFactory {
         if(userType == null){
             return null;
         }
-        else if(userType == "academicStudent"){
+        else if(userType.equals("academic")){
             return new AcademicStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo,"", "");
         }
-        else if(userType == "danceStudent"){
+        else if(userType.equals("dance")){
             return new DanceStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
-        else if(userType == "fitnessStudent"){
+        else if(userType.equals("fitness")){
             return new FitnessStudent(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);

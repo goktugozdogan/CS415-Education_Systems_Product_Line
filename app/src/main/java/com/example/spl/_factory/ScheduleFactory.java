@@ -16,10 +16,10 @@ public class ScheduleFactory {
         if(scheduleType == null){
             return null;
         }
-        else if(scheduleType == "userSchedule"){
+        else if(scheduleType.equals("userSchedule")){
             return new UserSchedule(id,  info, date);
         }
-        else if(scheduleType == "courseSchedule"){
+        else if(scheduleType.equals("courseSchedule")){
             return new CourseSchedule(id,  info, date);
         }
 

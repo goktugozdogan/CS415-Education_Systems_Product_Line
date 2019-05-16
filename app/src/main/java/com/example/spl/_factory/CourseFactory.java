@@ -20,15 +20,15 @@ public class CourseFactory {
         if(courseType == null){
             return null;
         }
-        else if(courseType == "academicCourse"){
+        else if(courseType.equals("academic")){
             return new AcademicCourse(teacherID,  schedule, student,
                     isOnline, lat, lon);
         }
-        else if(courseType == "danceCourse"){
+        else if(courseType.equals("dance")){
             return new DanceCourse(teacherID,  schedule, student,
                     isOnline, lat, lon);
         }
-        else if(courseType == "fitnessCourse"){
+        else if(courseType.equals("fitness")){
             return new FitnessCourse(teacherID,  schedule, student,
                     isOnline, lat, lon);
         }

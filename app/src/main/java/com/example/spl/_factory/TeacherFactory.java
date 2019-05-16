@@ -18,17 +18,17 @@ public class TeacherFactory {
         if(userType == null){
             return null;
         }
-        else if(userType == "academicTeacher"){
+        else if(userType.equals("academic")){
             return new AcademicTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
-        else if(userType == "danceTeacher"){
+        else if(userType.equals("dance")){
             return new DanceTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);
         }
-        else if(userType == "fitnessTeacher"){
+        else if(userType.equals("fitness")){
             return new FitnessTeacher(name,  surname, password,
                     address, phone, email, schedule,
                     paymentInfo);

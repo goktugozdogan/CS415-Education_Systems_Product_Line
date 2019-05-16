@@ -15,7 +15,9 @@ public class UserFactory {
         if(userType == null){
             return null;
         }
-        else if(userType == "danceTeacher" || userType == "academicTeacher" || userType == "fitnessTeacher"){
+        else if(userType.equals("academicT") ||
+                userType.equals("danceT") ||
+                userType.equals("fitnessT")){
             new TeacherFactory().getTeacher(userType, name, surname, password,
                     address, phone, email, schedule, paymentInfo);
         }
